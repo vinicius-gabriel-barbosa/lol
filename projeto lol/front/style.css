@@ -1,0 +1,33 @@
+.upper-card{
+    grid-area: upper;
+}
+.title{
+    grid-area: title;
+}
+.left-card{
+    grid-area: menu;
+}
+.right-card{
+    grid-area: right;
+}
+.down-card{
+    grid-area: login;
+}
+.main-card {
+    display: grid;
+    gap: 10%;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    'upper upper'
+    'menu title'
+    'menu right'
+    'login right';
+}
+.img-faker{
+    width: 75%;
+    height: 75%;
+}
+.input-text, .input-password{
+    display: flex;
+    flex-direction: column;
+}
