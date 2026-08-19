@@ -1,33 +1,70 @@
-.upper-card{
-    grid-area: upper;
-}
-.title{
-    grid-area: title;
-}
-.left-card{
-    grid-area: menu;
-}
-.right-card{
-    grid-area: right;
-}
-.down-card{
-    grid-area: login;
-}
-.main-card {
+
+.parent {
     display: grid;
-    gap: 10%;
-    justify-content: space-evenly;
-    grid-template-areas: 
-    'upper upper'
-    'menu title'
-    'menu right'
-    'login right';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
 }
+
+.upper-card {
+    grid-column: span 5 / span 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-card {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.right-card {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.left-card {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+
 .img-faker{
     width: 75%;
     height: 75%;
 }
+
 .input-text, .input-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.style-botton, .input-text, .input-password {
+    border-style: solid;
+    outline-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 65%;
+
+}
+
+.style-botton {
+    display: block;
+    box-sizing: border-box;
+}
+
+.cadastrar {
     display: flex;
     flex-direction: column;
 }
