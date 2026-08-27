@@ -1,0 +1,27 @@
+1. Abrir o PowerShell ou Prompt de Comando (CMD)
+Pressione a tecla Windows no seu teclado.
+Digite PowerShell ou CMD e pressione Enter.
+2. Entrar na pasta do projeto
+Copie e cole o comando abaixo no terminal para entrar na pasta onde salvamos os arquivos do site:
+
+powershell
+
+
+cd c:\Users\lucas\Downloads\testegravity
+3. Iniciar o Servidor do PHP
+Agora, execute este comando para ligar o servidor web local (utilizando o PHP do seu XAMPP):
+
+powershell
+
+
+C:\xampp\php\php.exe -S 127.0.0.1:8000
+💡 Nota: Mantenha essa janela do terminal aberta enquanto estiver usando o site. Se fechá-la, o site sairá do ar.
+
+4. Abrir no Navegador
+Abra o seu navegador de preferência (Chrome, Edge, Firefox, etc.) e acesse este endereço:
+
+👉 http://127.0.0.1:8000
+
+🔑 Credenciais para entrar:
+Administrador: admin@sistema.com com a senha admin123
+Usuário Comum: user@sistema.com com a senha user123
